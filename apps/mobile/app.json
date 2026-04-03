@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "SmartPrep",
+    "slug": "smartprep",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "platforms": ["android", "web"],
+    "android": {
+      "package": "com.smartprep.app"
+    }
+  }
+}
