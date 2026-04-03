@@ -1,0 +1,19 @@
+{
+  "name": "smartprep-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "backend",
+    "apps/web",
+    "apps/mobile"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace backend\" \"npm run dev --workspace apps/web\"",
+    "dev:mobile": "npm run start --workspace apps/mobile",
+    "lint": "npm run lint --workspaces",
+    "test": "npm run test --workspaces --if-present"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
